@@ -25,4 +25,8 @@ or
 ```
 ./hibp_check.py /home/user/path/to/file/emails.txt
 ```
-
+You cans also specify the directory where the script will save the output file(s), if the directory doesn't exist, the script will create it and save files to it:
+```
+./hibp_check.py ~/path/to/file/emails.txt ~/output/directory
+```
+If you do not proved the output directory, the output file(s) will be saved in the same directory as the script.
