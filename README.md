@@ -17,3 +17,12 @@ To use, simply run the script with the email right after:
 ```
 ./hibp_check.py admin@example.com
 ```
+If you have a file with a list of emails, 1 email per line then you can specify the file using absolute path:
+```
+./hibp_check.py ~/path/to/file/emails.txt
+```
+or
+```
+./hibp_check.py /home/user/path/to/file/emails.txt
+```
+
