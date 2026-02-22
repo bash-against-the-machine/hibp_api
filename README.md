@@ -29,4 +29,4 @@ You cans also specify the directory where the script will save the output file(s
 ```
 ./hibp_check.py ~/path/to/file/emails.txt ~/output/directory
 ```
-If you do not proved the output directory, the output file(s) will be saved in the same directory as the script.
+If you do not provide the output directory, the output file(s) will be saved in the same directory as the script.
