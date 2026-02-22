@@ -13,3 +13,9 @@ ls -la
 to see the file.
 You can edit with a text editor or using vim, vi, or nano in terminal. Replace the "your_api_key" with your actual api key for Have I Been Pwned.
 This file is added to .gitignore just in case you end up pushing it to remote repo after clonning it or forking.
+
+### Usage
+To use, simply run the script with the email right after:
+```
+./hibp_check.py admin@example.com
+```
