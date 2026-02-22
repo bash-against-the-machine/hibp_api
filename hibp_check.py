@@ -70,4 +70,4 @@ def check_email(email):
 for i, email in enumerate(emails):
     check_email(email)
     if i < len(emails) - 1:
-        time.sleep(1.5)
+        time.sleep(6.5)
