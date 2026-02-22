@@ -3,12 +3,16 @@
 import sys
 import os
 import requests
-from dotenv import load_dotenv
 from datetime import datetime
 
-load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+key_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "api.key")
 
-API_KEY = os.getenv("hibp-api-key")
+API_KEY = None
+with open(key_file) as f:
+    for line in f:
+        if line.startswith("hibp-api-key="):
+            API_KEY = line.strip().split("=", 1)[1]
+            break
 
 if not API_KEY:
     print("Error: hibp-api-key not found in .env file.")
